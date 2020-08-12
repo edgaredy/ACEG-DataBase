@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Usuario_Carniceria" directorySegmentName="seg_0" id="DDE5E9EA-63FC-1DF0-91E5-7F0383D84FB6">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 21:26:53 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>38CA8E08-37BC-122F-C88C-862B8918C786</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F73021CC-C313-2BFB-59CC-8E7CE0A01DEF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
