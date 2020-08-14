@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88E302A2-94F5-F0A5-0DEA-77C7EE5524CE" name="PROVEEDOR">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:01:13 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="C99201D7-D821-13EC-D1D2-F6C3A088D304">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:01:24 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_Empresa" id="773197C1-C536-37EA-9A5A-60CFBD466678">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:01:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombreProveedor" id="4C80F9A8-B6EB-4BA4-CE42-B78102BF8B87">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:02:24 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido" id="2A422D3D-258C-562E-636B-C6EF19744A73">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:02:41 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="5CDC8B0D-E73D-907A-F68A-7C51B60F296E">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:03:18 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4FF69532-F61D-E6E1-320B-2AAC2666E3F4" name="Proovedor PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-12 22:01:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C99201D7-D821-13EC-D1D2-F6C3A088D304</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

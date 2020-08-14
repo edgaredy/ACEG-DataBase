@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="53CEDFF5-5D7E-2F40-5CBE-34B7022E45D3" name="PRODUCTO_ADEUDO_CLIENTE">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 20:42:43 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7D164B7E-0A66-2B64-B3BB-A4166C433329">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 20:42:52 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="peso" id="1D6B45F2-0268-475B-90FB-48A234F5A086">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 20:44:00 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="5B0DAC74-C211-D3EE-37BF-00DF42D242BD">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 20:43:22 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,16,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo" id="F28031C0-6733-9E87-EDB3-03A3709B96CB">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 21:25:43 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,16,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="2C3B8CDB-F115-B567-9F14-23FAF1F0EBC0">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 21:26:16 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaCompra" id="1F0512DD-33E8-65D9-CBF3-3A527C10D07D">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 21:26:29 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="ECA4CFC7-BCF7-B9FA-D8A3-8321BE642BEF">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 21:26:51 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,16,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="9BD2DE57-2C91-2DDB-BBD1-348DFA1EAD38">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 22:56:44 UTC</createdTime>
+<generatorID>6B84C6A3-7D32-253F-D3EE-07D3B210046B</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
+</engineerTo>
+<referedAttribute>E57E8AEE-E7A6-FC0C-40AC-2B52667D0647</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7352C3B-0640-150C-51E7-3F19233FCA7F" name="ProductoAdeudado PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-13 20:43:05 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7D164B7E-0A66-2B64-B3BB-A4166C433329</attributeRef>
+<attributeRef>9BD2DE57-2C91-2DDB-BBD1-348DFA1EAD38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
