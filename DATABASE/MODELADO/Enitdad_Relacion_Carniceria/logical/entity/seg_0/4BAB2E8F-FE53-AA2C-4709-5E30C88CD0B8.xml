@@ -4,7 +4,7 @@
 <createdTime>2020-08-14 03:00:37 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="A61E61C1-4588-D895-A70B-B7086A1EAA8A" value="true"/>
+<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2020-08-14 03:00:42 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="A61E61C1-4588-D895-A70B-B7086A1EAA8A" value="true"/>
+<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2020-08-14 03:00:52 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="A61E61C1-4588-D895-A70B-B7086A1EAA8A" value="true"/>
+<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,27 +47,13 @@
 <generatorID>0C234FF5-C6AA-C4BF-0FC7-E6434C82163D</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="A61E61C1-4588-D895-A70B-B7086A1EAA8A" value="true"/>
+<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
 </engineerTo>
 <referedAttribute>72F94DF7-30CB-0C64-184E-4E33973FF457</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="abreviacion" id="96AC3B1A-4427-427F-A1A1-AAABD15E9901">
-<createdBy>edgar</createdBy>
-<createdTime>2020-08-14 03:06:35 UTC</createdTime>
-<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="A61E61C1-4588-D895-A70B-B7086A1EAA8A" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -76,7 +62,7 @@
 <createdTime>2020-08-14 03:00:51 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="A61E61C1-4588-D895-A70B-B7086A1EAA8A" value="true"/>
+<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

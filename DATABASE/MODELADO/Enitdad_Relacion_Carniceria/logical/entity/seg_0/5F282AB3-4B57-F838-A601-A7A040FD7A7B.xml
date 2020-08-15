@@ -3,9 +3,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 20:54:03 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 20:54:11 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 20:54:14 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -44,9 +35,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:15:55 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -58,9 +46,6 @@
 <createdTime>2020-08-14 00:00:58 UTC</createdTime>
 <generatorID>52544BE1-9D09-1DCD-007D-0A11F1712620</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <referedAttribute>D5E376E9-2B82-3D48-1412-D7288396AF11</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -73,10 +58,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 22:51:42 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="false"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B50BA755-C242-555A-428B-05A612DDF7C3</attributeRef>

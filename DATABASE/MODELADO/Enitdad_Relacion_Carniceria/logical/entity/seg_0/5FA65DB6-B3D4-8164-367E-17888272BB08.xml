@@ -3,9 +3,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:05:51 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:07:40 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:08:23 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -44,9 +35,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:16:56 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
@@ -58,9 +46,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:11:19 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
@@ -72,9 +57,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:08:44 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -86,9 +68,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:10:41 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -98,9 +77,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:14:15 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
@@ -113,9 +89,6 @@
 <createdTime>2020-08-14 00:01:42 UTC</createdTime>
 <generatorID>CB112354-BFDF-6FA9-304A-72A84664FCC2</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <referedAttribute>B50BA755-C242-555A-428B-05A612DDF7C3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -127,9 +100,6 @@
 <createdTime>2020-08-14 00:01:42 UTC</createdTime>
 <generatorID>CB112354-BFDF-6FA9-304A-72A84664FCC2</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="true"/>
-</engineerTo>
 <referedAttribute>ACE5C97B-3FF6-168D-BC93-3A747FB3CD61</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -142,10 +112,6 @@
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 21:07:47 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="06439800-FE7D-5D2C-30C0-D3744637AA3E" value="false"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>BD39FDE1-80B7-8645-53C7-7A189558B4EA</attributeRef>
