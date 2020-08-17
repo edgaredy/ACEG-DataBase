@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Enitdad_Relacion_Carniceria" id="E74CC1B3-9C9E-70A0-AB9E-61A7150178B6" version="3.5">
-<createdBy>edgar</createdBy>
-<createdTime>2020-08-12 19:47:35 UTC</createdTime>
-<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>E74CC1B3-9C9E-70A0-AB9E-61A7150178B6</designId>
-</OSDM_Design>
