@@ -1,3 +1,5 @@
+DATOS DE EJEMPLO, POR EL PESO DEL SCRIPT REAL ES IMPOSIBLES SUBIR TODOS LOS REGISTROS, EL SCRIPT REAL TIENE 2 MILLONES DE REGISTROS
+
 INSERT INTO CLIENTE (nombre, apellido, genero, direccion, codigo_postal, telefono, email, carniceria_id) VALUES ('María', 'Sandoval', 'M', 'Plaza Asentamiento Estudioso 12, 6º', '24332', '6000189192', 'sandoval58@mail.net', '144');
 INSERT INTO CLIENTE (nombre, apellido, genero, direccion, codigo_postal, telefono, email, carniceria_id) VALUES ('Ana María', 'Sánchez', 'M', 'Plaza Neologismo 39, 1', '28809', '6701863293', 'anasanchez@mail.com', '414');
 INSERT INTO CLIENTE (nombre, apellido, genero, direccion, codigo_postal, telefono, email, carniceria_id) VALUES ('Fernando', 'Osorio', 'H', 'Plaza Ambición Alta 284, 3', '28590', '6113889453', 'osorio53@correo.es', '214');
