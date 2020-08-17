@@ -283,4 +283,68 @@ ALTER TABLE proveedor_carniceria
 -- ESTADOS 100%
 -- MUNICIPIOS 100%
 
+DROP TABLE carn_prod;
+DROP TABLE prod_carniceria;
+DROP TABLE carniceria;
  
+ -- 1
+CREATE TABLE carn_prod (
+    carniceria_id       INTEGER NOT NULL,
+    prod_carniceria_id  INTEGER NOT NULL
+);
+
+ALTER TABLE carn_prod ADD CONSTRAINT carn_prod_pk PRIMARY KEY ( carniceria_id,
+                                                                prod_carniceria_id );
+-- 2                                                                
+CREATE TABLE carniceria (
+    id             INTEGER NOT NULL,
+    nombre         VARCHAR2(30) NOT NULL,
+    direccion      VARCHAR2(100),
+    codigo_postal  VARCHAR2(5),
+    telefono       CHAR(10),
+    descripcion    VARCHAR2(100)
+);
+
+ALTER TABLE carniceria ADD CONSTRAINT carniceria_pk PRIMARY KEY ( id );
+
+-- 3
+CREATE TABLE prod_carniceria (
+    id                              INTEGER NOT NULL,
+    producto                        VARCHAR2(50) NOT NULL,
+    precio                          NUMBER(7, 2) NOT NULL,
+    tipo_carne                      VARCHAR2(5) NOT NULL,
+    descripcion                     VARCHAR2(100),
+    carniceria_id                   INTEGER NOT NULL
+);
+
+ALTER TABLE prod_carniceria ADD CONSTRAINT prod_carniceria_pk PRIMARY KEY ( id );
+
+
+-- 1                                                             
+ALTER TABLE carn_prod
+    ADD CONSTRAINT carn_prod_carniceria_fk FOREIGN KEY ( carniceria_id )
+        REFERENCES carniceria ( id );
+
+ALTER TABLE carn_prod
+    ADD CONSTRAINT carn_prod_prod_carniceria_fk FOREIGN KEY ( prod_carniceria_id )
+        REFERENCES prod_carniceria ( id );
+        
+-- 2
+
+
+-- 3
+ALTER TABLE prod_carniceria
+    ADD CONSTRAINT prod_carniceria_carniceria_fk FOREIGN KEY ( carniceria_id )
+        REFERENCES carniceria ( id );
+
+
+-- 1
+INSERT INTO carn_prod (carniceria_id, prod_carniceria_id) VALUES(1,1);
+
+-- 2
+INSERT INTO carniceria (id, nombre, direccion, codigo_postal, telefono, descripcion) VALUES(1, 'EL GUERO', 'LOMAS', '76080', '4423357630', 'NIEVES PUTO');
+
+-- 3
+INSERT INTO prod_carniceria (id, producto, precio, tipo_carne, descripcion, carniceria_id) VALUES(1, 'SUADERO', 110, 'RES', 'CARNE CHINGONA', 1);
+
+
