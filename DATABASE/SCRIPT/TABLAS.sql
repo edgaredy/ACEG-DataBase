@@ -289,12 +289,17 @@ DROP TABLE carniceria;
  
  -- 1
 CREATE TABLE carn_prod (
-    carniceria_id       INTEGER NOT NULL,
-    prod_carniceria_id  INTEGER NOT NULL
+    carniceria_id             INTEGER NOT NULL,
+    prod_carniceria_id        INTEGER NOT NULL,
+    prod_carniceria_precio    NUMBER(7, 2),
+    prod_carniceria_producto  VARCHAR2(50)
 );
 
-ALTER TABLE carn_prod ADD CONSTRAINT carn_prod_pk PRIMARY KEY ( carniceria_id,
-                                                                prod_carniceria_id );
+ALTER TABLE carn_prod
+    ADD CONSTRAINT carn_prod_pk PRIMARY KEY ( carniceria_id,
+                                              prod_carniceria_id,
+                                              prod_carniceria_precio,
+                                              prod_carniceria_producto );
 -- 2                                                                
 CREATE TABLE carniceria (
     id             INTEGER NOT NULL,
@@ -309,15 +314,32 @@ ALTER TABLE carniceria ADD CONSTRAINT carniceria_pk PRIMARY KEY ( id );
 
 -- 3
 CREATE TABLE prod_carniceria (
-    id                              INTEGER NOT NULL,
-    producto                        VARCHAR2(50) NOT NULL,
-    precio                          NUMBER(7, 2) NOT NULL,
-    tipo_carne                      VARCHAR2(5) NOT NULL,
-    descripcion                     VARCHAR2(100),
-    carniceria_id                   INTEGER NOT NULL
+    id           INTEGER NOT NULL,
+    producto     VARCHAR2(50) NOT NULL,
+    precio       NUMBER(7, 2) NOT NULL,
+    tipo_carne   VARCHAR2(5) NOT NULL,
+    descripcion  VARCHAR2(100)
 );
 
-ALTER TABLE prod_carniceria ADD CONSTRAINT prod_carniceria_pk PRIMARY KEY ( id );
+ALTER TABLE prod_carniceria
+    ADD CONSTRAINT prod_carniceria_pk PRIMARY KEY ( id,
+                                                    precio,
+                                                    producto );
+
+
+SELECT * FROM carniceria C
+INNER JOIN carn_prod CP
+ON CP.carniceria_id = c.id
+INNER JOIN prod_carniceria PC
+ON PC.ID = CP.PROD_CARNICERIA_ID
+WHERE C.ID = 2;
+
+
+SELECT * FROM prod_carniceria;
+SELECT * FROM carn_prod;
+SELECT * FROM carniceria;
+
+
 
 
 -- 1                                                             
@@ -330,21 +352,21 @@ ALTER TABLE carn_prod
         REFERENCES prod_carniceria ( id );
         
 -- 2
-
-
 -- 3
-ALTER TABLE prod_carniceria
-    ADD CONSTRAINT prod_carniceria_carniceria_fk FOREIGN KEY ( carniceria_id )
-        REFERENCES carniceria ( id );
+
 
 
 -- 1
 INSERT INTO carn_prod (carniceria_id, prod_carniceria_id) VALUES(1,1);
+INSERT INTO carn_prod (carniceria_id, prod_carniceria_id) VALUES(2,1);
+INSERT INTO carn_prod (carniceria_id, prod_carniceria_id) VALUES(2,2);
 
 -- 2
 INSERT INTO carniceria (id, nombre, direccion, codigo_postal, telefono, descripcion) VALUES(1, 'EL GUERO', 'LOMAS', '76080', '4423357630', 'NIEVES PUTO');
+INSERT INTO carniceria (id, nombre, direccion, codigo_postal, telefono, descripcion) VALUES(2, 'BAMBI', 'LOMAS', '76080', '4412378945', 'EL TRONCO');
 
 -- 3
-INSERT INTO prod_carniceria (id, producto, precio, tipo_carne, descripcion, carniceria_id) VALUES(1, 'SUADERO', 110, 'RES', 'CARNE CHINGONA', 1);
+INSERT INTO prod_carniceria (id, producto, precio, tipo_carne, descripcion) VALUES(1, 'SUADERO', 110, 'RES', 'CARNE CHINGONA');
+INSERT INTO prod_carniceria (id, producto, precio, tipo_carne, descripcion) VALUES(2, 'JUIL', 145, 'RES', 'CARNE ALV');
 
 
