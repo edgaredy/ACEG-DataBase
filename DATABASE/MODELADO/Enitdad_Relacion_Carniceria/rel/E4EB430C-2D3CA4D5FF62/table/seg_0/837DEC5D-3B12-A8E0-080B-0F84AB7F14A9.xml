@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="837DEC5D-3B12-A8E0-080B-0F84AB7F14A9" name="NOTA_PAGADA">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>8B833069-F3EC-C21A-37FF-FDEA89710731</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C6EF9D7A-AB23-ED0F-815D-D66C7EA4E1EF">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>032CC4FB-7FD3-D03D-025D-551D35E684FC</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_nota" id="7108431B-E828-8420-7601-F88B994A635E">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>E0EE9F52-3406-AE4C-0F98-38F33FFB0B9D</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_compra_producto" id="B201DB04-4B94-1849-9813-EFB91A772876">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>94D9F3C1-3151-AAA4-29F9-684330DEB0A9</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_paga_producto" id="FCF8E026-C27A-2BE8-409F-E05B08015302">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>6AEF5B44-F9CE-8128-BFD9-EC28955D6425</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="peso_producto" id="CCAECBEF-896A-BFB8-E05D-8FC47466794C">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>F0E16690-EEFB-3BA7-F4EB-D5E347312D28</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="2ED7C771-4A8B-FB17-0733-1EB50F6DEE6C">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>D40BA207-F8E1-FBCD-51B0-3D281EE977B9</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,7,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="FAB8824B-4F97-98A1-3AE5-16E3BF2C8E33">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>E2F6C1D3-649F-949D-A147-647809A33098</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARNICERO_id" id="A82CFF1A-3E4A-7AA6-924A-C0DF1A097E00">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>129839ED-29D0-F578-949B-3E4EBF70BA58</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D77E447D-9843-F51F-EA52-DE4037A3E866" referredColumn="37BAA7FD-0771-9483-FA0C-641168B7F289"/>
+</associations>
+</Column>
+<Column name="CARNICERO_CARNICERIA_id" id="D5A8EA8D-2832-AA3F-95BA-EE96A0464396">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>EFD4ECA2-2364-09C1-6208-DB210B70D80A</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D77E447D-9843-F51F-EA52-DE4037A3E866" referredColumn="09590DDA-BF1B-EE6E-03FF-D4B61301C408"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CB8A817-D1B2-64B6-BAB2-E5496604439C" name="NOTA_PAGADA_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>16ACEF63-F9C2-B6AB-27D9-6B5B9A99795D</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7108431B-E828-8420-7601-F88B994A635E"/>
+<colUsage columnID="C6EF9D7A-AB23-ED0F-815D-D66C7EA4E1EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F34FC61-28AF-90D1-F79B-BD523000010F" name="NOTA_PAGADA_CARNICERO_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>1F230B81-6390-35CE-0C08-75A437F74C87</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A82CFF1A-3E4A-7AA6-924A-C0DF1A097E00"/>
+<colUsage columnID="D5A8EA8D-2832-AA3F-95BA-EE96A0464396"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7906F772-06D9-F83E-C102-7E82AB4CC52E" name="PROD_CLI_CAR">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROD_ADE_CLIENTE_id" id="652F6AD2-57D3-E7CC-12CC-8F5508520890">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BEEA104-DE2E-C46D-1DC4-7DB74FB6EE9D" referredColumn="6C794FEE-67A7-3232-31F8-C90433C5EADB"/>
+</associations>
+</Column>
+<Column name="PROD_ADE_CLIENTE_CLIENTE_id" id="5981114D-EF53-2365-ED4A-3DBD290B2F12">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BEEA104-DE2E-C46D-1DC4-7DB74FB6EE9D" referredColumn="7F481748-7E25-8662-0EB8-395A64E6F496"/>
+</associations>
+</Column>
+<Column name="PROD_CARNICERIA_id" id="4E143008-E0F7-FA99-A867-0F41AE00CF5C">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E5C6210-CD0B-5F2D-7B31-9794B101803A" referredColumn="7A486EEC-B892-CC6F-318F-332075E5DD36"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B16A7694-3864-15C9-87B4-41C210313435" name="PROD_CLI_CAR_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="652F6AD2-57D3-E7CC-12CC-8F5508520890"/>
+<colUsage columnID="5981114D-EF53-2365-ED4A-3DBD290B2F12"/>
+<colUsage columnID="4E143008-E0F7-FA99-A867-0F41AE00CF5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E82C3CA6-FEB8-0A9C-2D48-16C5BE6540DA" name="PROD_CLI_CAR_PROD_ADE_CLIENTE_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>CE7A1CA8-DBC0-E7CE-1A9C-9BBE9246BF1E</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="652F6AD2-57D3-E7CC-12CC-8F5508520890"/>
+<colUsage columnID="5981114D-EF53-2365-ED4A-3DBD290B2F12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4296C4B-15A0-05DE-50D9-AFC84170EDBF" name="PROD_CLI_CAR_PROD_CARNICERIA_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>CE7A1CA8-DBC0-E7CE-1A9C-9BBE9246BF1E</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E143008-E0F7-FA99-A867-0F41AE00CF5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B46A5A2F-4B20-A5B6-5F7E-D1085CA3D01C" name="PRO_PED">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROD_CARNICERIA_id" id="F42ADBFF-4D50-BED4-35D1-829B41FE2E19">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8326594B-D94B-1E61-00C5-3E4BFB9CF5AF" referredColumn="7A486EEC-B892-CC6F-318F-332075E5DD36"/>
+</associations>
+</Column>
+<Column name="PEDIDO_id" id="FDA0A814-05B2-DE00-93FE-CAF2C4483CF8">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77D5CA12-2A1C-C421-FB12-80E4D26D5FEB" referredColumn="CF2AFE8F-10CC-C5C0-B0D0-EF5249B11B16"/>
+</associations>
+</Column>
+<Column name="PEDIDO_CARNICERIA_id" id="E585DC2E-B7BB-E495-EC7F-0C80096B7BDA">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77D5CA12-2A1C-C421-FB12-80E4D26D5FEB" referredColumn="14BA1556-2D62-CE46-55A3-8403678D84DC"/>
+</associations>
+</Column>
+<Column name="PEDIDO_CLIENTE_id" id="99DEACA2-72B0-B7A9-2060-C7DDE800CF48">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77D5CA12-2A1C-C421-FB12-80E4D26D5FEB" referredColumn="71928C56-F87F-26DC-3E35-565B97C4DB07"/>
+</associations>
+</Column>
+<Column name="PEDIDO_id_pedido" id="01672A7F-001D-266E-B6D3-B9DF199AE609">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77D5CA12-2A1C-C421-FB12-80E4D26D5FEB" referredColumn="3A738C78-0197-69C2-316C-A63504076ED5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46A44420-364E-C5A2-283E-6526B73FB402" name="PRO_PED_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F42ADBFF-4D50-BED4-35D1-829B41FE2E19"/>
+<colUsage columnID="FDA0A814-05B2-DE00-93FE-CAF2C4483CF8"/>
+<colUsage columnID="E585DC2E-B7BB-E495-EC7F-0C80096B7BDA"/>
+<colUsage columnID="99DEACA2-72B0-B7A9-2060-C7DDE800CF48"/>
+<colUsage columnID="01672A7F-001D-266E-B6D3-B9DF199AE609"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14D4446B-CE30-D07A-F41A-C75C60915EA8" name="PRO_PED_PROD_CARNICERIA_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>C1F29750-CC71-FB17-E7E0-8770A8475F46</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F42ADBFF-4D50-BED4-35D1-829B41FE2E19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0DFDE77-0353-F2E9-E3FA-0B92A1E267CC" name="PRO_PED_PEDIDO_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 02:34:46 UTC</createdTime>
+<generatorID>C1F29750-CC71-FB17-E7E0-8770A8475F46</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDA0A814-05B2-DE00-93FE-CAF2C4483CF8"/>
+<colUsage columnID="E585DC2E-B7BB-E495-EC7F-0C80096B7BDA"/>
+<colUsage columnID="99DEACA2-72B0-B7A9-2060-C7DDE800CF48"/>
+<colUsage columnID="01672A7F-001D-266E-B6D3-B9DF199AE609"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

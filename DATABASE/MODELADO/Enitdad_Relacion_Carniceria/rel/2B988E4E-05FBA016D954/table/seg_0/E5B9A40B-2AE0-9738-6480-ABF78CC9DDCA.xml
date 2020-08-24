@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5B9A40B-2AE0-9738-6480-ABF78CC9DDCA" name="MUNICIPIO">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>4BAB2E8F-FE53-AA2C-4709-5E30C88CD0B8</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A6D7BF74-5D20-3358-5779-83D88E2A538E">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>9E4F0250-F205-AC1E-FAD4-264BC2ED93D9</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="municipio" id="E97F0AF6-47E5-0467-0A65-5DBA989B6A16">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>19FC479F-62B8-B716-9949-2A4A4F2BAD6D</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_id" id="B50CBCB5-E3C1-4731-30C0-E6197A696A00">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>20C2ADC0-A453-83F4-293B-E64E2624067D</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91180881-481B-E5F3-0470-9B0BFFC25128" referredColumn="B49513CB-A2A9-D73C-0C29-307E6AF23922"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50E6476C-BFA0-089D-C3AF-2AF3641AD9B9" name="MUNICIPIO_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>2D89258D-1B9C-DD1C-CBAF-19C3C2EBD44A</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6D7BF74-5D20-3358-5779-83D88E2A538E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60270AD8-3906-2086-FC5A-FAE2DD662E58" name="MUNICIPIO_ESTADO_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:15 UTC</createdTime>
+<generatorID>0C234FF5-C6AA-C4BF-0FC7-E6434C82163D</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B50CBCB5-E3C1-4731-30C0-E6197A696A00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

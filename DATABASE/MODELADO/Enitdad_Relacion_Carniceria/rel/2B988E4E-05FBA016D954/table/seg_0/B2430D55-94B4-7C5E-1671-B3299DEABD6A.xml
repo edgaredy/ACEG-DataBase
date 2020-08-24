@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2430D55-94B4-7C5E-1671-B3299DEABD6A" name="PROVEEDOR">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>88E302A2-94F5-F0A5-0DEA-77C7EE5524CE</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="031DE314-28E8-3094-F12C-6E1E6FE545F3">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>C99201D7-D821-13EC-D1D2-F6C3A088D304</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_empresa" id="527B48CB-A636-56A6-2AE4-5512583B1C1E">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>773197C1-C536-37EA-9A5A-60CFBD466678</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_proveedor" id="DE6E295F-49D3-75AF-9E5C-893EF908879E">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>4C80F9A8-B6EB-4BA4-CE42-B78102BF8B87</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="B3AA96CA-3802-75A7-25A3-3BF27DEE2ECF">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>2A422D3D-258C-562E-636B-C6EF19744A73</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="35004151-D192-4670-2F12-D694C0A05D38">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>BF86781F-DB52-EB69-62A5-B76CD3D23CCD</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="96D9A1B7-614A-DF90-82F3-27EBEFDDFFB5">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>54667E83-EABE-DCFB-FE7F-6B0B6BAD85B7</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="A749159F-5A6F-71EE-4A80-79778C3620F0">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>5CDC8B0D-E73D-907A-F68A-7C51B60F296E</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="D5D40C32-A820-6907-D917-5A32323D9EAC">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>23B78933-612A-E2BC-6609-1A4C2575DF56</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_postal" id="4DABCC17-BF83-28D9-47F3-7DE17F6081B9">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>56D5290A-7955-559C-1970-E7F510C3E26A</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72FE4C87-4625-5AB3-2752-43C50EEADB66" name="PROVEEDOR_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>4FF69532-F61D-E6E1-320B-2AAC2666E3F4</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="031DE314-28E8-3094-F12C-6E1E6FE545F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

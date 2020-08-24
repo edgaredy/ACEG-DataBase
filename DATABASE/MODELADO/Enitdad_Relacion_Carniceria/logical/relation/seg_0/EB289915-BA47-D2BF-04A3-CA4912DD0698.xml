@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CARN_PROD_CARN" directorySegmentName="seg_0" id="EB289915-BA47-D2BF-04A3-CA4912DD0698">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-17 05:20:41 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="D114325F-4C90-4A35-5D61-F8B1172445BC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F73021CC-C313-2BFB-59CC-8E7CE0A01DEF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>112B824F-1194-0628-A03D-846B9FE110C2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

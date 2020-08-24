@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C52E539C-C3D8-968D-3F45-13D553526DF5" containerWithKeyObject="CED826ED-E715-B61B-9DC6-FBD4FBB06CB7" localFKIndex="B7B59AAD-A26D-C52F-1C98-5CD07BC53DBC" name="PRODUCTO_NOTA_ADEUDADA_NOTA_ADEUDADA_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-14 03:08:12 UTC</createdTime>
+<generatorID>CB112354-BFDF-6FA9-304A-72A84664FCC2</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<referredTableLongName>NOTA_ADEUDADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>93B09CD9-EFED-CB36-2B06-86130014A55E</referredTableID>
+<keyObject>1FF87F89-791F-F787-D7F9-4BCA24A07D89</keyObject>
+<referredKeyID>1FF87F89-791F-F787-D7F9-4BCA24A07D89</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id,CARNICERIA_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

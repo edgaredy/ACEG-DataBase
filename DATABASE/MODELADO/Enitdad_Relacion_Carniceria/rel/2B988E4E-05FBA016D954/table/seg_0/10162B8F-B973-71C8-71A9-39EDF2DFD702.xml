@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10162B8F-B973-71C8-71A9-39EDF2DFD702" name="CARN_PROD_CARN">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CARNICERIA_id" id="E4ABF2EB-AAAA-000A-4494-6CD45CAE8C61">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2ADEB47-4F20-02DF-287F-23B14C49097E" referredColumn="39D865F5-49B5-AAF9-2DC2-EF840C0F4500"/>
+</associations>
+</Column>
+<Column name="PROD_CARNICERIA_id" id="87DD23BE-D25A-FD7F-D704-05241DA06EB4">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00754A2A-1423-B846-3919-32CF8A570DF2" referredColumn="B8A834C1-D0E0-F80F-E669-C62D59FD29A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C13D692E-5467-5421-746C-6CD3E195E66C" name="CARN_PROD_CARN_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4ABF2EB-AAAA-000A-4494-6CD45CAE8C61"/>
+<colUsage columnID="87DD23BE-D25A-FD7F-D704-05241DA06EB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E79CF29A-C795-D12E-7D50-6A08AFBD2E0F" name="CARN_PROD_CARN_CARNICERIA_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>EB289915-BA47-D2BF-04A3-CA4912DD0698</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4ABF2EB-AAAA-000A-4494-6CD45CAE8C61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCB7DCD4-04BC-F08A-2776-08C97AED2DE2" name="CARN_PROD_CARN_PROD_CARNICERIA_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-20 22:57:14 UTC</createdTime>
+<generatorID>EB289915-BA47-D2BF-04A3-CA4912DD0698</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87DD23BE-D25A-FD7F-D704-05241DA06EB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
