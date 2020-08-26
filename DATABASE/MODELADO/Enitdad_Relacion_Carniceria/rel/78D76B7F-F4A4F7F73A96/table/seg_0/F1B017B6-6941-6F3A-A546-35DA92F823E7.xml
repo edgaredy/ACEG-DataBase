@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1B017B6-6941-6F3A-A546-35DA92F823E7" name="ACEG_PROD_ADE_CLIENTE">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>53CEDFF5-5D7E-2F40-5CBE-34B7022E45D3</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROD_ADE_PK" id="96B1ED4A-1F61-B7A5-F5D3-C39BE5BD25B9">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>7D164B7E-0A66-2B64-B3BB-A4166C433329</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>9999999999999999999999999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+<autoIncrementSequenceName>ACEG_PROD_ADE_CLIENTE_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>ACEG_PROD_ADE_CLIENTE_TRIG</autoIncrementTriggerName>
+</Column>
+<Column name="FECHA_COMPRA" id="96ED1F0A-5A63-E84E-CCCC-9D86E6C5BC60">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>1F0512DD-33E8-65D9-CBF3-3A527C10D07D</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO_PRODUCTO_KG" id="C917B88D-3ED3-01DB-899A-A21CCBC7B7C2">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>1D6B45F2-0268-475B-90FB-48A234F5A086</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="DB05EA9C-6D13-B701-E753-849BDC8336D3">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>ECA4CFC7-BCF7-B9FA-D8A3-8321BE642BEF</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="8C711DD7-499C-3543-1460-18D7ED5AE021">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>2C3B8CDB-F115-B567-9F14-23FAF1F0EBC0</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENTE_FK" id="73DB2034-24FD-7412-DE14-DBD6E006C3D5">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>9BD2DE57-2C91-2DDB-BBD1-348DFA1EAD38</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1AA42DC-99F5-7409-9454-C51274DA3BC2" referredColumn="8418FF08-0C24-A2DA-E902-6774F60B53CD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06A6366A-FD0B-8A6D-A1EB-1F340579A4B6" name="ACEG_PROD_ADE_CLIENTE_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>A7352C3B-0640-150C-51E7-3F19233FCA7F</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96B1ED4A-1F61-B7A5-F5D3-C39BE5BD25B9"/>
+<colUsage columnID="73DB2034-24FD-7412-DE14-DBD6E006C3D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D06B4CA9-2CF6-C592-0CDA-3235D8F9D066" name="ACEG_PROD_ADE_CLIENTE_ACEG_CLIENTE_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:10:42 UTC</createdTime>
+<generatorID>6B84C6A3-7D32-253F-D3EE-07D3B210046B</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73DB2034-24FD-7412-DE14-DBD6E006C3D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

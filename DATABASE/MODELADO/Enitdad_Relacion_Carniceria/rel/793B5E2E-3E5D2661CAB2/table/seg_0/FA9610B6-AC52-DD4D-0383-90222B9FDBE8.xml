@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA9610B6-AC52-DD4D-0383-90222B9FDBE8" name="ACEG_PROD_CAR_PROD_ADE_CLI">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROD_ADE_FK" id="0324F92F-8F6F-0595-F729-6EB4CC2EE834">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADD28C6E-AA95-7F06-2E67-159258FD3491" referredColumn="659E8228-D7C0-703C-5D4B-C6A2669B0ACD"/>
+</associations>
+</Column>
+<Column name="ID_CLIENTE_FK" id="A91524E5-3453-D812-F41C-96EA02CF6A58">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADD28C6E-AA95-7F06-2E67-159258FD3491" referredColumn="B54F8F97-277C-EF97-3C35-0557623E35CB"/>
+</associations>
+</Column>
+<Column name="ID_PRODUCTO_FK" id="15D8EC0F-11CA-C858-9849-87DB49BDA4AF">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54EA05FE-CD74-8721-5F2E-6B90D5395EBD" referredColumn="9B4AE982-971A-5FB7-ADC3-AED07AAEB1C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC1F07CE-0544-02DB-F4AE-52282393DD46" name="PROD_CAR_PROD_ADE_CLI_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0324F92F-8F6F-0595-F729-6EB4CC2EE834"/>
+<colUsage columnID="A91524E5-3453-D812-F41C-96EA02CF6A58"/>
+<colUsage columnID="15D8EC0F-11CA-C858-9849-87DB49BDA4AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47FE4791-227A-4545-6ECE-A6DC8061B926" name="PROD_CAR_PROD_ADE_CLI_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<generatorID>CE7A1CA8-DBC0-E7CE-1A9C-9BBE9246BF1E</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0324F92F-8F6F-0595-F729-6EB4CC2EE834"/>
+<colUsage columnID="A91524E5-3453-D812-F41C-96EA02CF6A58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8098F5A5-9558-68EC-9DCC-2FDB460434B7" name="PRO_CAR_PRO_ADE_CLI_PRO_CAR_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<generatorID>CE7A1CA8-DBC0-E7CE-1A9C-9BBE9246BF1E</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15D8EC0F-11CA-C858-9849-87DB49BDA4AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

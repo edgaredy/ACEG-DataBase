@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BAB2E8F-FE53-AA2C-4709-5E30C88CD0B8" name="MUNICIPIO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BAB2E8F-FE53-AA2C-4709-5E30C88CD0B8" name="ACEG_MUNICIPIO">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-14 03:00:37 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,24 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="9E4F0250-F205-AC1E-FAD4-264BC2ED93D9">
+<Attribute name="ID_MUNICIPIO_PK" id="9E4F0250-F205-AC1E-FAD4-264BC2ED93D9">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-14 03:00:42 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="municipio" id="19FC479F-62B8-B716-9949-2A4A4F2BAD6D">
+<Attribute name="MUNICIPIO" id="19FC479F-62B8-B716-9949-2A4A4F2BAD6D">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-14 03:00:52 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,13 +40,13 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="20C2ADC0-A453-83F4-293B-E64E2624067D">
+<Attribute name="ID_ESTADO_FK" id="20C2ADC0-A453-83F4-293B-E64E2624067D">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-14 03:01:21 UTC</createdTime>
 <generatorID>0C234FF5-C6AA-C4BF-0FC7-E6434C82163D</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <referedAttribute>72F94DF7-30CB-0C64-184E-4E33973FF457</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -61,7 +61,7 @@
 <createdTime>2020-08-14 03:00:51 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

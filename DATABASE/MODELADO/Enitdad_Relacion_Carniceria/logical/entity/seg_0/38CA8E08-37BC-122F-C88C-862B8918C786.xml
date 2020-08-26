@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38CA8E08-37BC-122F-C88C-862B8918C786" name="CARNICERO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38CA8E08-37BC-122F-C88C-862B8918C786" name="ACEG_CARNICERO">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-12 21:07:20 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,24 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="CC1C4C5C-6B7E-D36A-D853-F0DC35A50541">
+<Attribute name="ID_CARNICERO_PK" id="CC1C4C5C-6B7E-D36A-D853-F0DC35A50541">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-12 21:10:29 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre" id="5906149F-92EE-02A0-1FBB-6B6724EC91E7">
+<Attribute name="NOMBRE" id="5906149F-92EE-02A0-1FBB-6B6724EC91E7">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-12 21:20:11 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,12 +40,12 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="apellido" id="0FB939B5-B07A-1CA2-4212-9435B4B942CD">
+<Attribute name="APELLIDO" id="0FB939B5-B07A-1CA2-4212-9435B4B942CD">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-12 21:21:01 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,12 +54,12 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="genero" id="653D0263-CD99-2BC8-FEED-1E49BA46CC39">
+<Attribute name="GENERO" id="653D0263-CD99-2BC8-FEED-1E49BA46CC39">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-16 00:03:58 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,12 +68,12 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="email" id="70724474-5FE7-86F7-BC0D-AFD1CBD7C09A">
+<Attribute name="EMAIL" id="70724474-5FE7-86F7-BC0D-AFD1CBD7C09A">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-12 21:21:45 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -82,12 +82,12 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="telefono" id="D0B75472-54BD-E68E-AEBB-75D94D2BCD39">
+<Attribute name="TELEFONO" id="D0B75472-54BD-E68E-AEBB-75D94D2BCD39">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 23:17:59 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -95,12 +95,12 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="direccion" id="CB687C0C-B342-9071-62CA-B95B0A8B51C3">
+<Attribute name="DIRECCION" id="CB687C0C-B342-9071-62CA-B95B0A8B51C3">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-15 22:52:55 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -109,12 +109,12 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="codigo_postal" id="68B84B18-1DEC-B458-4B88-30AD03DC7D8C">
+<Attribute name="CP" id="68B84B18-1DEC-B458-4B88-30AD03DC7D8C">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-15 22:53:45 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -123,12 +123,12 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="sueldo_mensual" id="AFBB902F-4B88-CE45-98B3-B1978FD51DCB">
+<Attribute name="SUELDO_MENSUAL" id="AFBB902F-4B88-CE45-98B3-B1978FD51DCB">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-15 22:54:35 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -137,13 +137,13 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="33D7ACB5-B506-22FB-45A6-67CF925BEFA2">
+<Attribute name="ID_CARNICERIA_FK" id="33D7ACB5-B506-22FB-45A6-67CF925BEFA2">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-14 00:00:34 UTC</createdTime>
 <generatorID>9BAABB91-123D-0546-FC5C-C6972BB16BEF</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <referedAttribute>D5E376E9-2B82-3D48-1412-D7288396AF11</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -151,13 +151,13 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="9C87AD7C-527F-CF29-01E0-A5683F774A4A">
+<Attribute name="ID_ESTADO_PK" id="9C87AD7C-527F-CF29-01E0-A5683F774A4A">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-15 23:59:24 UTC</createdTime>
 <generatorID>130FFEBF-0CBC-EA8A-33CA-AED4EE100FB4</generatorID>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <referedAttribute>72F94DF7-30CB-0C64-184E-4E33973FF457</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -172,7 +172,7 @@
 <createdTime>2020-08-12 21:10:36 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

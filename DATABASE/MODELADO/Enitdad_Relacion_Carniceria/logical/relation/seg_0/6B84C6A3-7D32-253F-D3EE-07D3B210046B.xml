@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLI_PROD_ADE_CLI" directorySegmentName="seg_0" id="6B84C6A3-7D32-253F-D3EE-07D3B210046B">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ACEG_CLIENTE_PROD_ADE_CLI" directorySegmentName="seg_0" id="6B84C6A3-7D32-253F-D3EE-07D3B210046B">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-13 22:56:44 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <sourcePk>2CC1F2B3-162F-2A67-EC54-94750E66219C</sourcePk>
 <identifying>true</identifying>

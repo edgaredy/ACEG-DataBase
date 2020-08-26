@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MUN_EST" directorySegmentName="seg_0" id="0C234FF5-C6AA-C4BF-0FC7-E6434C82163D">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ACEG_MUNINICPIO_ESTADO" directorySegmentName="seg_0" id="0C234FF5-C6AA-C4BF-0FC7-E6434C82163D">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-14 03:01:21 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="4E1D75C9-2101-2D2F-D067-F349FA87E9E6" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <sourcePk>694523E6-8394-0377-B350-E706FE7A92CF</sourcePk>
 <identifying>false</identifying>

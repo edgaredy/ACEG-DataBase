@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CAR_NOT_ADE" directorySegmentName="seg_0" id="E2273576-C356-2B38-0104-F34B3C76CDCA">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ACEG_CARN_NOTA_ADEUDADA" directorySegmentName="seg_0" id="E2273576-C356-2B38-0104-F34B3C76CDCA">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 05:14:16 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="8BF9BA49-D0B6-C9ED-126D-A70BB95F6CEE" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <sourcePk>A1D6B8C9-A222-2A67-3D24-2F51CF7180FC</sourcePk>
 <identifying>false</identifying>

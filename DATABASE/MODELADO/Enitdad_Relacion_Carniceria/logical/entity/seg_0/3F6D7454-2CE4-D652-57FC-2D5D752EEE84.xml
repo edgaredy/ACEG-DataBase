@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F6D7454-2CE4-D652-57FC-2D5D752EEE84" name="PROD_PROVEEDOR">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F6D7454-2CE4-D652-57FC-2D5D752EEE84" name="ACEG_PROD_PROVEEDOR">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 04:19:26 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,24 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="426B444D-E46A-82E8-C9B0-1EBC86AAC731">
+<Attribute name="ID_PROD_PROV_PK" id="426B444D-E46A-82E8-C9B0-1EBC86AAC731">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 04:19:46 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="producto" id="A2E6189E-38A6-B23E-21BB-1F61ED0ABB46">
+<Attribute name="PRODUCTO" id="A2E6189E-38A6-B23E-21BB-1F61ED0ABB46">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 04:19:55 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,12 +40,12 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="precio_kg" id="6F11973C-784D-CE60-3E50-12ABAD3B6A11">
+<Attribute name="PRECIO_KG" id="6F11973C-784D-CE60-3E50-12ABAD3B6A11">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 23:59:02 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -54,12 +54,12 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipo_carne" id="C25CDFAB-D6C2-9E56-F556-5433D985FF24">
+<Attribute name="TIPO_CARNE" id="C25CDFAB-D6C2-9E56-F556-5433D985FF24">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 05:21:33 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -67,12 +67,12 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="90A92CE5-FCFF-99A5-AC0F-D6FCA61C2696">
+<Attribute name="DESCRIPCION" id="90A92CE5-FCFF-99A5-AC0F-D6FCA61C2696">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-17 05:22:23 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -88,7 +88,7 @@
 <createdTime>2020-08-17 04:19:54 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
-<item key="72D7AE4F-4B59-ABBA-2345-A8FDB2D5F8C1" value="true"/>
+<item key="78D76B7F-4C8C-E453-E767-F4A4F7F73A96" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

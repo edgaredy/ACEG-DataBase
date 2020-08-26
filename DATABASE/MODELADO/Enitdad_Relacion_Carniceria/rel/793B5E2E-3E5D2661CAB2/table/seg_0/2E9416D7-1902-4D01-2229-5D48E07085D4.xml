@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E9416D7-1902-4D01-2229-5D48E07085D4" name="ACEG_PROD_PROV_NOTA_ADE">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_NOTA_FK" id="6BC7E0E9-0936-FE6C-A832-846DD0F77987">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="909EC85B-27BD-B714-1AEC-B6910F9C481D" referredColumn="B60815AD-9566-08A5-9FC6-B979D23D81FE"/>
+</associations>
+</Column>
+<Column name="ID_NOTA_PROV_FK" id="577D5C13-80B5-0114-E6E4-7E4A40FE0B93">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="909EC85B-27BD-B714-1AEC-B6910F9C481D" referredColumn="1425C3DE-7D85-60CC-9768-7E25D96CD851"/>
+</associations>
+</Column>
+<Column name="ID_PROD_PROV_FK" id="3EB88BFE-2ACB-08A1-E155-B5C79076A2B5">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="817BDD1C-EA5F-6C8C-8704-49E929917BFC" referredColumn="89A2CA1D-7C50-8D74-2807-EFDF9CE7167E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="312816C7-4077-E0D9-F179-DC32955FBCA2" name="PROD_PROV_NOTA_ADE_PK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC7E0E9-0936-FE6C-A832-846DD0F77987"/>
+<colUsage columnID="577D5C13-80B5-0114-E6E4-7E4A40FE0B93"/>
+<colUsage columnID="3EB88BFE-2ACB-08A1-E155-B5C79076A2B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD7C0AB7-9F21-DABA-0977-CE9B1C472691" name="PROD_PROV_NOTA_ADE_NOTA_ADE_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<generatorID>88D522B6-7037-8C9C-C96C-77C1FFA84C9A</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC7E0E9-0936-FE6C-A832-846DD0F77987"/>
+<colUsage columnID="577D5C13-80B5-0114-E6E4-7E4A40FE0B93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D6726FC-41D7-9C86-A739-F95BBF0356DB" name="PROD_PRV_NOTA_ADE_PROD_PRV_FK">
+<createdBy>edgar</createdBy>
+<createdTime>2020-08-26 21:51:42 UTC</createdTime>
+<generatorID>88D522B6-7037-8C9C-C96C-77C1FFA84C9A</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EB88BFE-2ACB-08A1-E155-B5C79076A2B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
