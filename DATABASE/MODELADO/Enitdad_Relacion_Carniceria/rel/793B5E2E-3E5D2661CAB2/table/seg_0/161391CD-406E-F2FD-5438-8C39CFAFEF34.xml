@@ -87,7 +87,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CARNICERO_PK" id="9FEB029A-47CF-3E45-971A-31CF4ED55AF0">
+<Column name="ID_CARNICERO_FK" id="9FEB029A-47CF-3E45-971A-31CF4ED55AF0">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-26 21:51:42 UTC</createdTime>
 <generatorID>28A8B07B-DEF4-A80D-A4FE-A004148BC4F5</generatorID>

@@ -87,7 +87,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CARNICERIA_PK" id="CA2D28B1-5A14-25BD-3EAF-BDAE7CBA8E0F">
+<Column name="ID_CARNICERIA_FK" id="CA2D28B1-5A14-25BD-3EAF-BDAE7CBA8E0F">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-26 21:51:42 UTC</createdTime>
 <generatorID>88B40DC1-648C-EEFD-EE77-05B5625919CF</generatorID>
@@ -102,7 +102,7 @@
 <colAssociation fkAssociation="6039F430-C913-73DF-C87E-AC4BAB59E183" referredColumn="5965CAB3-224F-53B5-233B-480FB393877A"/>
 </associations>
 </Column>
-<Column name="ID_CLIENTE_PK" id="734ED38D-F4B5-4D2C-11E6-EFF0707F42D9">
+<Column name="ID_CLIENTE_FK" id="734ED38D-F4B5-4D2C-11E6-EFF0707F42D9">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-26 21:51:42 UTC</createdTime>
 <generatorID>A8654364-F8E7-217E-9B87-1CE7310801EE</generatorID>

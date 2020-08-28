@@ -77,7 +77,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_CLIENTE_PK" id="B54F8F97-277C-EF97-3C35-0557623E35CB">
+<Column name="ID_CLIENTE_FK" id="B54F8F97-277C-EF97-3C35-0557623E35CB">
 <createdBy>edgar</createdBy>
 <createdTime>2020-08-26 21:51:42 UTC</createdTime>
 <generatorID>9BD2DE57-2C91-2DDB-BBD1-348DFA1EAD38</generatorID>

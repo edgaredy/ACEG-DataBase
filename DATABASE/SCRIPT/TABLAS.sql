@@ -1,5 +1,4 @@
-
-
+/*
 drop table ACEG_CARNICERIA cascade constraints;
 drop table ACEG_CARNICERIA_CLIENTE cascade constraints;
 drop table ACEG_CARNICERIA_PROD_CARN cascade constraints;
@@ -21,12 +20,22 @@ drop table ACEG_PROD_PROVEEDOR cascade constraints;
 drop table ACEG_PROV_PROD_PROV cascade constraints;
 drop table ACEG_PROVEEDOR cascade constraints;
 
-
-
-
+DROP SEQUENCE ACEG_CARNICERIA_SEQ;
+DROP SEQUENCE ACEG_PEDIDO_SEQ;
+DROP SEQUENCE ACEG_NOTA_ADEUDADA_SEQ;
+DROP SEQUENCE ACEG_NOTA_PAGADA_SEQ;
+DROP SEQUENCE ACEG_ESTADO_SEQ;
+DROP SEQUENCE ACEG_CARNICERO_SEQ;
+DROP SEQUENCE ACEG_CLIENTE_SEQ;
+DROP SEQUENCE ACEG_MUNICIPIO_SEQ;
+DROP SEQUENCE ACEG_PROD_CARNICERIA_SEQ;
+DROP SEQUENCE ACEG_PROD_PROVEEDOR_SEQ;
+DROP SEQUENCE ACEG_PROD_ADE_CLIENTE_SEQ;
+DROP SEQUENCE ACEG_PROVEEDOR_SEQ;
+*/
 
 -- Generado por Oracle SQL Developer Data Modeler 20.2.0.167.1538
---   en:        2020-08-26 17:27:58 CDT
+--   en:        2020-08-26 18:27:50 CDT
 --   sitio:      Oracle Database 12c
 --   tipo:      Oracle Database 12c
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
@@ -34,150 +43,150 @@ drop table ACEG_PROVEEDOR cascade constraints;
 
 
 CREATE TABLE aceg_carniceria (
-    id_carniceria_pk  NUMBER NOT NULL,
-    nombre            VARCHAR2(100) NOT NULL,
-    direccion         VARCHAR2(100),
-    cp                VARCHAR2(5),
-    telefono          CHAR(10),
-    descripcion       VARCHAR2(100),
-    id_estado_fk      NUMBER NOT NULL
+    id_carniceria_pk   NUMBER NOT NULL,
+    nombre             VARCHAR2(100) NOT NULL,
+    direccion          VARCHAR2(100),
+    cp                 VARCHAR2(5),
+    telefono           CHAR(10),
+    descripcion        VARCHAR2(100),
+    id_estado_fk       NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_carniceria ADD CONSTRAINT carniceria_pk PRIMARY KEY ( id_carniceria_pk );
 
 CREATE TABLE aceg_carniceria_cliente (
-    id_cliente_fk     NUMBER NOT NULL,
-    id_carniceria_fk  NUMBER NOT NULL
+    id_cliente_fk      NUMBER NOT NULL,
+    id_carniceria_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_carniceria_cliente ADD CONSTRAINT carniceria_cliente_pk PRIMARY KEY ( id_cliente_fk,
                                                                                        id_carniceria_fk );
 
 CREATE TABLE aceg_carniceria_prod_carn (
-    id_carniceria_fk  NUMBER NOT NULL,
-    id_producto_fk    NUMBER NOT NULL
+    id_carniceria_fk   NUMBER NOT NULL,
+    id_producto_fk     NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_carniceria_prod_carn ADD CONSTRAINT carniceria_prod_carn_pk PRIMARY KEY ( id_carniceria_fk,
                                                                                            id_producto_fk );
 
 CREATE TABLE aceg_carniceria_proveedor (
-    id_proveedor_fk   NUMBER NOT NULL,
-    id_carniceria_fk  NUMBER NOT NULL
+    id_proveedor_fk    NUMBER NOT NULL,
+    id_carniceria_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_carniceria_proveedor ADD CONSTRAINT aceg_carniceria_proveedor_pk PRIMARY KEY ( id_proveedor_fk,
                                                                                                 id_carniceria_fk );
 
 CREATE TABLE aceg_carnicero (
-    id_carnicero_pk   NUMBER NOT NULL,
-    nombre            VARCHAR2(30) NOT NULL,
-    apellido          VARCHAR2(50),
-    genero            CHAR(1),
-    email             VARCHAR2(30),
-    telefono          CHAR(10) NOT NULL,
-    direccion         VARCHAR2(100),
-    cp                CHAR(5),
-    sueldo_mensual    NUMBER(7, 2) NOT NULL,
-    id_carniceria_fk  NUMBER NOT NULL,
-    id_estado_fk      NUMBER NOT NULL
+    id_carnicero_pk    NUMBER NOT NULL,
+    nombre             VARCHAR2(30) NOT NULL,
+    apellido           VARCHAR2(50),
+    genero             CHAR(1),
+    email              VARCHAR2(30),
+    telefono           CHAR(10) NOT NULL,
+    direccion          VARCHAR2(100),
+    cp                 CHAR(5),
+    sueldo_mensual     NUMBER(7, 2) NOT NULL,
+    id_carniceria_fk   NUMBER NOT NULL,
+    id_estado_fk       NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_carnicero ADD CONSTRAINT carnicero_pk PRIMARY KEY ( id_carnicero_pk,
                                                                      id_carniceria_fk );
 
 CREATE TABLE aceg_cliente (
-    id_cliente_pk  NUMBER NOT NULL,
-    nombre         VARCHAR2(30) NOT NULL,
-    apellido       VARCHAR2(50),
-    genero         CHAR(1),
-    email          VARCHAR2(30),
-    telefono       CHAR(10),
-    direccion      VARCHAR2(100),
-    cp             CHAR(5),
-    id_estado_fk   NUMBER NOT NULL
+    id_cliente_pk   NUMBER NOT NULL,
+    nombre          VARCHAR2(30) NOT NULL,
+    apellido        VARCHAR2(50),
+    genero          CHAR(1),
+    email           VARCHAR2(30),
+    telefono        CHAR(10),
+    direccion       VARCHAR2(100),
+    cp              CHAR(5),
+    id_estado_fk    NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( id_cliente_pk );
 
 CREATE TABLE aceg_estado (
-    id_estado_pk  NUMBER NOT NULL,
-    estado        VARCHAR2(50) NOT NULL,
-    abreviacion   CHAR(3)
+    id_estado_pk   NUMBER NOT NULL,
+    estado         VARCHAR2(50) NOT NULL,
+    abreviacion    CHAR(3)
 );
 
 ALTER TABLE aceg_estado ADD CONSTRAINT estado_pk PRIMARY KEY ( id_estado_pk );
 
 CREATE TABLE aceg_municipio (
-    id_municipio_pk  NUMBER NOT NULL,
-    municipio        VARCHAR2(50) NOT NULL,
-    id_estado_fk     NUMBER NOT NULL
+    id_municipio_pk   NUMBER NOT NULL,
+    municipio         VARCHAR2(50) NOT NULL,
+    id_estado_fk      NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_municipio ADD CONSTRAINT municipio_pk PRIMARY KEY ( id_municipio_pk );
 
 CREATE TABLE aceg_nota_adeudada (
-    id_nota_pk        NUMBER NOT NULL,
-    id_nota_prov_pk   NUMBER NOT NULL,
-    fecha_compra      DATE NOT NULL,
-    peso_producto     VARCHAR2(10) NOT NULL,
-    total             NUMBER(7, 2) NOT NULL,
-    descripcion       VARCHAR2(100),
-    id_carnicero_pk   NUMBER NOT NULL,
-    id_carniceria_fk  NUMBER NOT NULL
+    id_nota_pk         NUMBER NOT NULL,
+    id_nota_prov_pk    NUMBER NOT NULL,
+    fecha_compra       DATE NOT NULL,
+    peso_producto      VARCHAR2(10) NOT NULL,
+    total              NUMBER(7, 2) NOT NULL,
+    descripcion        VARCHAR2(100),
+    id_carnicero_fk    NUMBER NOT NULL,
+    id_carniceria_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_nota_adeudada ADD CONSTRAINT nota_adeudada_pk PRIMARY KEY ( id_nota_pk,
                                                                              id_nota_prov_pk );
 
 CREATE TABLE aceg_nota_pagada (
-    id_nota_pk         NUMBER NOT NULL,
-    id_nota_prov_pk    NUMBER NOT NULL,
-    fecha_compra_prod  DATE NOT NULL,
-    fecha_pago_prod    DATE NOT NULL,
-    peso_prod_kg       VARCHAR2(10) NOT NULL,
-    total              NUMBER(7, 5) NOT NULL,
-    descripcion        VARCHAR2(100),
-    id_carnicero_fk    NUMBER NOT NULL,
-    id_carniceria_fk   NUMBER NOT NULL
+    id_nota_pk          NUMBER NOT NULL,
+    id_nota_prov_pk     NUMBER NOT NULL,
+    fecha_compra_prod   DATE NOT NULL,
+    fecha_pago_prod     DATE NOT NULL,
+    peso_prod_kg        VARCHAR2(10) NOT NULL,
+    total               NUMBER(7, 5) NOT NULL,
+    descripcion         VARCHAR2(100),
+    id_carnicero_fk     NUMBER NOT NULL,
+    id_carniceria_fk    NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_nota_pagada ADD CONSTRAINT nota_pagada_pk PRIMARY KEY ( id_nota_prov_pk,
                                                                          id_nota_pk );
 
 CREATE TABLE aceg_pedido (
-    id_pedido_pk      NUMBER NOT NULL,
-    id_nota_pk        NUMBER NOT NULL,
-    peso_total_kg     NUMBER(7, 2) NOT NULL,
-    fecha_entrega     DATE NOT NULL,
-    total             NUMBER(7, 2) NOT NULL,
-    descripcion       VARCHAR2(100),
-    id_carniceria_pk  NUMBER NOT NULL,
-    id_cliente_pk     NUMBER NOT NULL
+    id_pedido_pk       NUMBER NOT NULL,
+    id_nota_pk         NUMBER NOT NULL,
+    peso_total_kg      NUMBER(7, 2) NOT NULL,
+    fecha_entrega      DATE NOT NULL,
+    total              NUMBER(7, 2) NOT NULL,
+    descripcion        VARCHAR2(100),
+    id_carniceria_fk   NUMBER NOT NULL,
+    id_cliente_fk      NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_pedido
     ADD CONSTRAINT pedido_pk PRIMARY KEY ( id_pedido_pk,
-                                           id_carniceria_pk,
-                                           id_cliente_pk,
+                                           id_carniceria_fk,
+                                           id_cliente_fk,
                                            id_nota_pk );
 
 CREATE TABLE aceg_prod_ade_cliente (
-    id_prod_ade_pk    NUMBER NOT NULL,
-    fecha_compra      DATE NOT NULL,
-    peso_producto_kg  NUMBER(7, 2) NOT NULL,
-    total             NUMBER(7, 2) NOT NULL,
-    descripcion       VARCHAR2(100),
-    id_cliente_pk     NUMBER NOT NULL
+    id_prod_ade_pk     NUMBER NOT NULL,
+    fecha_compra       DATE NOT NULL,
+    peso_producto_kg   NUMBER(7, 2) NOT NULL,
+    total              NUMBER(7, 2) NOT NULL,
+    descripcion        VARCHAR2(100),
+    id_cliente_fk      NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_prod_ade_cliente ADD CONSTRAINT prod_ade_cliente_pk PRIMARY KEY ( id_prod_ade_pk,
-                                                                                   id_cliente_pk );
+                                                                                   id_cliente_fk );
 
 CREATE TABLE aceg_prod_car_prod_ade_cli (
-    id_prod_ade_fk  NUMBER NOT NULL,
-    id_cliente_fk   NUMBER NOT NULL,
-    id_producto_fk  NUMBER NOT NULL
+    id_prod_ade_fk   NUMBER NOT NULL,
+    id_cliente_fk    NUMBER NOT NULL,
+    id_producto_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_prod_car_prod_ade_cli
@@ -186,11 +195,11 @@ ALTER TABLE aceg_prod_car_prod_ade_cli
                                                           id_producto_fk );
 
 CREATE TABLE aceg_prod_carn_pedido (
-    id_producto_fk    NUMBER NOT NULL,
-    id_pedido_fk      NUMBER NOT NULL,
-    id_carniceria_fk  NUMBER NOT NULL,
-    id_cliente_fk     NUMBER NOT NULL,
-    id_nota_fk        NUMBER NOT NULL
+    id_producto_fk     NUMBER NOT NULL,
+    id_pedido_fk       NUMBER NOT NULL,
+    id_carniceria_fk   NUMBER NOT NULL,
+    id_cliente_fk      NUMBER NOT NULL,
+    id_nota_fk         NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_prod_carn_pedido
@@ -201,19 +210,19 @@ ALTER TABLE aceg_prod_carn_pedido
                                                      id_nota_fk );
 
 CREATE TABLE aceg_prod_carniceria (
-    id_producto_pk  NUMBER NOT NULL,
-    producto        VARCHAR2(50) NOT NULL,
-    precio_kg       NUMBER(7, 2) NOT NULL,
-    tipo_carne      VARCHAR2(5) NOT NULL,
-    descripcion     VARCHAR2(100)
+    id_producto_pk   NUMBER NOT NULL,
+    producto         VARCHAR2(50) NOT NULL,
+    precio_kg        NUMBER(7, 2) NOT NULL,
+    tipo_carne       VARCHAR2(5) NOT NULL,
+    descripcion      VARCHAR2(100)
 );
 
 ALTER TABLE aceg_prod_carniceria ADD CONSTRAINT prod_carniceria_pk PRIMARY KEY ( id_producto_pk );
 
 CREATE TABLE aceg_prod_prov_nota_ade (
-    id_nota_fk       NUMBER NOT NULL,
-    id_nota_prov_fk  NUMBER NOT NULL,
-    id_prod_prov_fk  NUMBER NOT NULL
+    id_nota_fk        NUMBER NOT NULL,
+    id_nota_prov_fk   NUMBER NOT NULL,
+    id_prod_prov_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_prod_prov_nota_ade
@@ -222,9 +231,9 @@ ALTER TABLE aceg_prod_prov_nota_ade
                                                        id_prod_prov_fk );
 
 CREATE TABLE aceg_prod_prov_nota_pagada (
-    id_nota_prov_fk  NUMBER NOT NULL,
-    id_nota_fk       NUMBER NOT NULL,
-    id_prod_prov_fk  NUMBER NOT NULL
+    id_nota_prov_fk   NUMBER NOT NULL,
+    id_nota_fk        NUMBER NOT NULL,
+    id_prod_prov_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_prod_prov_nota_pagada
@@ -233,33 +242,33 @@ ALTER TABLE aceg_prod_prov_nota_pagada
                                                           id_prod_prov_fk );
 
 CREATE TABLE aceg_prod_proveedor (
-    id_prod_prov_pk  NUMBER NOT NULL,
-    producto         VARCHAR2(30) NOT NULL,
-    precio_kg        NUMBER(7, 2) NOT NULL,
-    tipo_carne       VARCHAR2(5) NOT NULL,
-    descripcion      VARCHAR2(100)
+    id_prod_prov_pk   NUMBER NOT NULL,
+    producto          VARCHAR2(30) NOT NULL,
+    precio_kg         NUMBER(7, 2) NOT NULL,
+    tipo_carne        VARCHAR2(5) NOT NULL,
+    descripcion       VARCHAR2(100)
 );
 
 ALTER TABLE aceg_prod_proveedor ADD CONSTRAINT prod_proveedor_pk PRIMARY KEY ( id_prod_prov_pk );
 
 CREATE TABLE aceg_prov_prod_prov (
-    id_proveedor_fk  NUMBER NOT NULL,
-    id_prod_prov_fk  NUMBER NOT NULL
+    id_proveedor_fk   NUMBER NOT NULL,
+    id_prod_prov_fk   NUMBER NOT NULL
 );
 
 ALTER TABLE aceg_prov_prod_prov ADD CONSTRAINT prov_prod_prov_pk PRIMARY KEY ( id_proveedor_fk,
                                                                                id_prod_prov_fk );
 
 CREATE TABLE aceg_proveedor (
-    id_proveedor_pk   NUMBER NOT NULL,
-    nombre_empresa    VARCHAR2(30),
-    nombre_proveedor  VARCHAR2(30) NOT NULL,
-    apellido          VARCHAR2(50),
-    genero            CHAR(1),
-    email             VARCHAR2(50),
-    telefono          CHAR(10) NOT NULL,
-    direccion         VARCHAR2(100),
-    cp                CHAR(5)
+    id_proveedor_pk    NUMBER NOT NULL,
+    nombre_empresa     VARCHAR2(30),
+    nombre_proveedor   VARCHAR2(30) NOT NULL,
+    apellido           VARCHAR2(50),
+    genero             CHAR(1),
+    email              VARCHAR2(50),
+    telefono           CHAR(10) NOT NULL,
+    direccion          VARCHAR2(100),
+    cp                 CHAR(5)
 );
 
 ALTER TABLE aceg_proveedor ADD CONSTRAINT proveedor_pk PRIMARY KEY ( id_proveedor_pk );
@@ -309,7 +318,7 @@ ALTER TABLE aceg_municipio
         REFERENCES aceg_estado ( id_estado_pk );
 
 ALTER TABLE aceg_nota_adeudada
-    ADD CONSTRAINT nota_adeudada_carnicero_fk FOREIGN KEY ( id_carnicero_pk,
+    ADD CONSTRAINT nota_adeudada_carnicero_fk FOREIGN KEY ( id_carnicero_fk,
                                                             id_carniceria_fk )
         REFERENCES aceg_carnicero ( id_carnicero_pk,
                                     id_carniceria_fk );
@@ -321,11 +330,11 @@ ALTER TABLE aceg_nota_pagada
                                     id_carniceria_fk );
 
 ALTER TABLE aceg_pedido
-    ADD CONSTRAINT pedido_carniceria_fk FOREIGN KEY ( id_carniceria_pk )
+    ADD CONSTRAINT pedido_carniceria_fk FOREIGN KEY ( id_carniceria_fk )
         REFERENCES aceg_carniceria ( id_carniceria_pk );
 
 ALTER TABLE aceg_pedido
-    ADD CONSTRAINT pedido_cliente_fk FOREIGN KEY ( id_cliente_pk )
+    ADD CONSTRAINT pedido_cliente_fk FOREIGN KEY ( id_cliente_fk )
         REFERENCES aceg_cliente ( id_cliente_pk );
 
 ALTER TABLE aceg_prod_car_prod_ade_cli
@@ -333,14 +342,14 @@ ALTER TABLE aceg_prod_car_prod_ade_cli
         REFERENCES aceg_prod_carniceria ( id_producto_pk );
 
 ALTER TABLE aceg_prod_ade_cliente
-    ADD CONSTRAINT prod_ade_cliente_cliente_fk FOREIGN KEY ( id_cliente_pk )
+    ADD CONSTRAINT prod_ade_cliente_cliente_fk FOREIGN KEY ( id_cliente_fk )
         REFERENCES aceg_cliente ( id_cliente_pk );
 
 ALTER TABLE aceg_prod_car_prod_ade_cli
     ADD CONSTRAINT prod_car_prod_ade_cli_fk FOREIGN KEY ( id_prod_ade_fk,
                                                           id_cliente_fk )
         REFERENCES aceg_prod_ade_cliente ( id_prod_ade_pk,
-                                           id_cliente_pk );
+                                           id_cliente_fk );
 
 ALTER TABLE aceg_prod_carn_pedido
     ADD CONSTRAINT prod_carn_pedido_pedido_fk FOREIGN KEY ( id_pedido_fk,
@@ -348,8 +357,8 @@ ALTER TABLE aceg_prod_carn_pedido
                                                             id_cliente_fk,
                                                             id_nota_fk )
         REFERENCES aceg_pedido ( id_pedido_pk,
-                                 id_carniceria_pk,
-                                 id_cliente_pk,
+                                 id_carniceria_fk,
+                                 id_cliente_fk,
                                  id_nota_pk );
 
 ALTER TABLE aceg_prod_carn_pedido
@@ -515,7 +524,6 @@ BEGIN
     :new.id_proveedor_pk := aceg_proveedor_seq.nextval;
 END;
 /
-
 
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
