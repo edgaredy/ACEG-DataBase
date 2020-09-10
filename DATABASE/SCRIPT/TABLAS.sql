@@ -1,46 +1,9 @@
-/*
-drop table ACEG_CARNICERIA cascade constraints;
-drop table ACEG_CARNICERIA_CLIENTE cascade constraints;
-drop table ACEG_CARNICERIA_PROD_CARN cascade constraints;
-drop table ACEG_CARNICERIA_PROVEEDOR cascade constraints;
-drop table ACEG_CARNICERO cascade constraints;
-drop table ACEG_CLIENTE cascade constraints;
-drop table ACEG_ESTADO cascade constraints;
-drop table ACEG_MUNICIPIO cascade constraints;
-drop table ACEG_NOTA_ADEUDADA cascade constraints;
-drop table ACEG_NOTA_PAGADA cascade constraints;
-drop table ACEG_PEDIDO cascade constraints;
-drop table ACEG_PROD_ADE_CLIENTE cascade constraints;
-drop table ACEG_PROD_CAR_PROD_ADE_CLI cascade constraints;
-drop table ACEG_PROD_CARN_PEDIDO cascade constraints;
-drop table ACEG_PROD_CARNICERIA cascade constraints;
-drop table ACEG_PROD_PROV_NOTA_ADE cascade constraints;
-drop table ACEG_PROD_PROV_NOTA_PAGADA cascade constraints;
-drop table ACEG_PROD_PROVEEDOR cascade constraints;
-drop table ACEG_PROV_PROD_PROV cascade constraints;
-drop table ACEG_PROVEEDOR cascade constraints;
-
-DROP SEQUENCE ACEG_CARNICERIA_SEQ;
-DROP SEQUENCE ACEG_PEDIDO_SEQ;
-DROP SEQUENCE ACEG_NOTA_ADEUDADA_SEQ;
-DROP SEQUENCE ACEG_NOTA_PAGADA_SEQ;
-DROP SEQUENCE ACEG_ESTADO_SEQ;
-DROP SEQUENCE ACEG_CARNICERO_SEQ;
-DROP SEQUENCE ACEG_CLIENTE_SEQ;
-DROP SEQUENCE ACEG_MUNICIPIO_SEQ;
-DROP SEQUENCE ACEG_PROD_CARNICERIA_SEQ;
-DROP SEQUENCE ACEG_PROD_PROVEEDOR_SEQ;
-DROP SEQUENCE ACEG_PROD_ADE_CLIENTE_SEQ;
-DROP SEQUENCE ACEG_PROVEEDOR_SEQ;
-*/
-
 -- Generado por Oracle SQL Developer Data Modeler 20.2.0.167.1538
 --   en:        2020-08-26 18:27:50 CDT
 --   sitio:      Oracle Database 12c
 --   tipo:      Oracle Database 12c
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
 -- predefined type, no DDL - XMLTYPE
-
 
 CREATE TABLE aceg_carniceria (
     id_carniceria_pk   NUMBER NOT NULL,
@@ -273,6 +236,22 @@ CREATE TABLE aceg_proveedor (
 
 ALTER TABLE aceg_proveedor ADD CONSTRAINT proveedor_pk PRIMARY KEY ( id_proveedor_pk );
 
+CREATE TABLE aceg_role (
+    role_pk       VARCHAR2(20) NOT NULL,
+    descripcion   VARCHAR2(100) NOT NULL
+);
+
+ALTER TABLE aceg_role ADD CONSTRAINT aceg_role_pk PRIMARY KEY ( role_pk );
+
+CREATE TABLE aceg_usuario (
+    id_pk      INTEGER NOT NULL,
+    email      VARCHAR2(100) NOT NULL,
+    password   VARCHAR2(100) NOT NULL,
+    role_fk    VARCHAR2(20) NOT NULL
+);
+
+ALTER TABLE aceg_usuario ADD CONSTRAINT aceg_usuario_pk PRIMARY KEY ( id_pk );
+
 ALTER TABLE aceg_carniceria_cliente
     ADD CONSTRAINT carn_cliente_carn_fk FOREIGN KEY ( id_carniceria_fk )
         REFERENCES aceg_carniceria ( id_carniceria_pk );
@@ -392,6 +371,10 @@ ALTER TABLE aceg_prov_prod_prov
 ALTER TABLE aceg_prov_prod_prov
     ADD CONSTRAINT prov_prod_prov_proveedor_fk FOREIGN KEY ( id_proveedor_fk )
         REFERENCES aceg_proveedor ( id_proveedor_pk );
+
+ALTER TABLE aceg_usuario
+    ADD CONSTRAINT usuario_role_fk FOREIGN KEY ( role_fk )
+        REFERENCES aceg_role ( role_pk );
 
 CREATE SEQUENCE aceg_carniceria_seq START WITH 1 MINVALUE 1 MAXVALUE 9999999999999999999999999999 CACHE 20;
 
@@ -525,19 +508,29 @@ BEGIN
 END;
 /
 
+CREATE SEQUENCE aceg_usuario_seq START WITH 1 MINVALUE 1 MAXVALUE 9999999999999999999999999999 CACHE 20;
+
+CREATE OR REPLACE TRIGGER aceg_usuario_trig BEFORE
+    INSERT ON aceg_usuario
+    FOR EACH ROW
+    WHEN ( new.id_usuario_pk IS NULL )
+BEGIN
+    :new.id_usuario_pk := aceg_usuario_seq.nextval;
+END;
+/
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            20
+-- CREATE TABLE                            22
 -- CREATE INDEX                             0
--- ALTER TABLE                             46
+-- ALTER TABLE                             49
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
 -- CREATE PACKAGE BODY                      0
 -- CREATE PROCEDURE                         0
 -- CREATE FUNCTION                          0
--- CREATE TRIGGER                          12
+-- CREATE TRIGGER                          13
 -- ALTER TRIGGER                            0
 -- CREATE COLLECTION TYPE                   0
 -- CREATE STRUCTURED TYPE                   0
@@ -550,7 +543,7 @@ END;
 -- CREATE DISK GROUP                        0
 -- CREATE ROLE                              0
 -- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                         12
+-- CREATE SEQUENCE                         13
 -- CREATE MATERIALIZED VIEW                 0
 -- CREATE MATERIALIZED VIEW LOG             0
 -- CREATE SYNONYM                           0

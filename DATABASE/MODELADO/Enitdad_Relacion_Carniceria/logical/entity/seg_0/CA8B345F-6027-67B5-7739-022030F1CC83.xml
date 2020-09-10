@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BAB2E8F-FE53-AA2C-4709-5E30C88CD0B8" name="ACEG_MUNICIPIO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA8B345F-6027-67B5-7739-022030F1CC83" name="ACEG_ROLE">
 <createdBy>edgar</createdBy>
-<createdTime>2020-08-14 03:00:37 UTC</createdTime>
+<createdTime>2020-09-10 17:06:45 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
 <item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
@@ -15,21 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_MUNICIPIO_PK" id="9E4F0250-F205-AC1E-FAD4-264BC2ED93D9">
+<Attribute name="ROLE" id="85B920D6-17CE-5D96-A715-BD776F125B9B">
 <createdBy>edgar</createdBy>
-<createdTime>2020-08-14 03:00:42 UTC</createdTime>
-<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
-<engineerTo>
-<item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="MUNICIPIO" id="19FC479F-62B8-B716-9949-2A4A4F2BAD6D">
-<createdBy>edgar</createdBy>
-<createdTime>2020-08-14 03:00:52 UTC</createdTime>
+<createdTime>2020-09-10 17:10:19 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
 <item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
@@ -37,35 +25,34 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_ESTADO_FK" id="20C2ADC0-A453-83F4-293B-E64E2624067D">
+<Attribute name="DESCRIPCION" id="E7F6D0AA-D407-1B5A-DED6-5325142C0E70">
 <createdBy>edgar</createdBy>
-<createdTime>2020-08-14 03:01:21 UTC</createdTime>
-<generatorID>0C234FF5-C6AA-C4BF-0FC7-E6434C82163D</generatorID>
+<createdTime>2020-09-10 17:15:19 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
 <item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
 </engineerTo>
-<referedAttribute>72F94DF7-30CB-0C64-184E-4E33973FF457</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2D89258D-1B9C-DD1C-CBAF-19C3C2EBD44A" name="MUNICIPIO PK">
+<identifier id="131BFA3E-F284-B8DF-53CF-A561BEA141C9" name="ACEG_ROLE PK">
 <createdBy>edgar</createdBy>
-<createdTime>2020-08-14 03:00:51 UTC</createdTime>
+<createdTime>2020-09-10 17:10:18 UTC</createdTime>
 <ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
 <engineerTo>
 <item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9E4F0250-F205-AC1E-FAD4-264BC2ED93D9</attributeRef>
+<attributeRef>85B920D6-17CE-5D96-A715-BD776F125B9B</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
