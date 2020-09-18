@@ -137,6 +137,20 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_ESTADO_FK" id="51FDDB59-EB9E-19F3-3533-081DED5011A0">
+<createdBy>edgar</createdBy>
+<createdTime>2020-09-17 20:15:02 UTC</createdTime>
+<generatorID>E789C464-7A4F-7EA3-6491-EE02A18CB649</generatorID>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
+</engineerTo>
+<referedAttribute>72F94DF7-30CB-0C64-184E-4E33973FF457</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4FF69532-F61D-E6E1-320B-2AAC2666E3F4" name="Proovedor PK">

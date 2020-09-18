@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ACEG_ESTADO_PROVEEDOR" directorySegmentName="seg_0" id="E789C464-7A4F-7EA3-6491-EE02A18CB649">
+<createdBy>edgar</createdBy>
+<createdTime>2020-09-17 20:15:02 UTC</createdTime>
+<ownerDesignName>Enitdad_Relacion_Carniceria</ownerDesignName>
+<engineerTo>
+<item key="793B5E2E-CE74-E4D5-A522-3E5D2661CAB2" value="true"/>
+</engineerTo>
+<sourcePk>694523E6-8394-0377-B350-E706FE7A92CF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>59BCCF5C-F2E8-6925-6A40-978B85950589</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>88E302A2-94F5-F0A5-0DEA-77C7EE5524CE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
